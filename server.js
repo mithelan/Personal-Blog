@@ -17,8 +17,8 @@ res.send('workk')
 //Routes
 app.use('/api/users',require('./src/routes/api/users'));
 app.use('/api/auth',require('./src/routes/api/auth'));
-/*app.use('/api/profile',require('./src/routes/api/profile'));
-app.use('/api/posts',require('./src/routes/api/posts'));*/
+app.use('/api/profile',require('./src/routes/api/profile'));
+/*app.use('/api/posts',require('./src/routes/api/posts'));*/
 
 
 
@@ -37,6 +37,8 @@ mongoose.connect(
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        useFindAndModify:false,
+        useCreateIndex: true
     },
     (err) => {
         if (err) throw err;

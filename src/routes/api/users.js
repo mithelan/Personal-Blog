@@ -4,7 +4,7 @@ const gravatar=require('gravatar')
 const jwt=require('jsonwebtoken');
 const router=express.Router();
 require("dotenv").config({ path: "src/.env" });
-const {check,validationResult}=require('express-validator/check')
+const {check,validationResult}=require('express-validator')
 const User=require('../../model/User')
 
 router.post('/',(req,res)=>{
