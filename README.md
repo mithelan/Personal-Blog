@@ -1,6 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+This a personal blog where any person can registered himself to the web.Registered User can post blog about them. Any person can like/comment to their posts.
+This is done using MERN stack.
 
 In the project directory, you can run:
 
